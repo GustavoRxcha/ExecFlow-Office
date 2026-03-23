@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://qloqeb3q5h7q"]
+
+[ext_resource type="Script" uid="uid://bmxli21mryext" path="res://Player.cs" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_onrkg"]
+height = 1.2
+
+[node name="Player" type="CharacterBody3D" unique_id=1040967269]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=932679690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014453113, 0)
+shape = SubResource("CapsuleShape3D_onrkg")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=196044780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40498644, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=1046821999]
+target_position = Vector3(0, 0, -3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1132942303]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1144148203]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Mira" type="ColorRect" parent="CanvasLayer/CenterContainer" unique_id=1356748312]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 2
+mouse_filter = 2
+color = Color(1, 0, 0, 1)
