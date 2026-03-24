@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dfqg2kmer6380" path="res://Modelos/Furniture-Kit .GLTF/computerScreen.glb" id="9_73dkc"]
 [ext_resource type="PackedScene" uid="uid://clv7mc76pv7vs" path="res://Modelos/Furniture-Kit .GLTF/computerMouse.glb" id="10_5n7j3"]
 [ext_resource type="PackedScene" uid="uid://dusfa8bejha4a" path="res://Modelos/Furniture-Kit .GLTF/chairDesk.glb" id="11_5nshd"]
+[ext_resource type="PackedScene" uid="uid://cq88km43gyyxd" path="res://Modelos/Personagens .GLTF/Suit_Male.gltf" id="13_2ocpx"]
+[ext_resource type="PackedScene" uid="uid://whtuxj03imvc" path="res://Modelos/Personagens .GLTF/OldClassy_Male.gltf" id="14_73dkc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i533g"]
 resource_name = "wood"
@@ -780,6 +782,12 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_isfsl")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_73dkc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5n7j3"]
+radius = 0.5854492
+height = 3.3410645
 
 [sub_resource type="Environment" id="Environment_2kj1b"]
 background_mode = 1
@@ -3504,11 +3512,105 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4749999, 2.5, -3.1350002)
 [node name="OmniLight3D6" type="OmniLight3D" parent="lights" unique_id=596334632]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4749999, 2.5, -0.13500023)
 
-[node name="Player" parent="." unique_id=1040967269 instance=ExtResource("1_g08l6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.73431575, 0)
+[node name="personagens" type="Node3D" parent="." unique_id=1206788843]
+
+[node name="Suit_Male" parent="personagens" unique_id=1232324757 instance=ExtResource("13_2ocpx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.363826)
+
+[node name="CharacterArmature" parent="personagens/Suit_Male" index="0" unique_id=1028621383]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -2.2118864, 0.12188959, 3.7202952)
+
+[node name="Skeleton3D" parent="personagens/Suit_Male/CharacterArmature" index="0" unique_id=175093902]
+bones/1/position = Vector3(0.2654247, 0.024662875, -0.04505539)
+bones/1/rotation = Quaternion(5.197531e-06, 0.70295197, 0.71123743, 5.3323706e-06)
+bones/2/position = Vector3(0.0021532448, 0.64654744, -0.3888195)
+bones/2/rotation = Quaternion(-0.10335282, 1.1824302e-07, -6.161281e-08, 0.99464476)
+bones/3/position = Vector3(-0.001479934, -0.066774875, -0.046242267)
+bones/3/rotation = Quaternion(-0.050768822, -2.6733022e-07, -2.2751658e-08, 0.99871045)
+bones/4/rotation = Quaternion(0.09089295, 4.362232e-07, 5.619492e-08, 0.99586076)
+bones/5/rotation = Quaternion(-0.0068399673, -8.2640315e-07, 3.3178362e-09, 0.99997663)
+bones/6/rotation = Quaternion(-0.03338168, 6.776377e-07, -2.295124e-09, 0.9994427)
+bones/7/rotation = Quaternion(-1.1175864e-08, -0.00027547523, 1.3510591e-11, 1)
+bones/8/position = Vector3(0.13320151, 0.14084096, 0.0135214245)
+bones/9/rotation = Quaternion(0.07029663, 0.2579975, 0.6785476, -0.6841555)
+bones/10/rotation = Quaternion(0.070537224, 0.3615146, -0.613267, 0.69873834)
+bones/11/rotation = Quaternion(0.10717231, 0.5242386, 0.14835924, 0.83167154)
+bones/12/position = Vector3(-0.13313027, 0.14075463, 0.013461236)
+bones/13/rotation = Quaternion(-0.12711069, 0.40977132, 0.80977285, 0.40024766)
+bones/14/rotation = Quaternion(-0.021565262, -0.13877665, 0.18374968, 0.9728885)
+bones/15/rotation = Quaternion(0.013825006, -0.2827459, 0.0029830118, 0.9590906)
+bones/16/position = Vector3(0.25302905, -0.016702136, -0.055923738)
+bones/16/rotation = Quaternion(0.82267594, 0.006432319, 0.0047807265, 0.5684542)
+bones/16/scale = Vector3(0.99999815, 0.99999523, 0.9999517)
+bones/17/rotation = Quaternion(0.6840604, 0.00694725, 0.006954544, 0.72935915)
+bones/17/scale = Vector3(1.0000007, 1.0000211, 1.0000052)
+bones/18/position = Vector3(-0.2547121, -0.016702136, -0.0559241)
+bones/18/rotation = Quaternion(0.822676, -0.0064326804, -0.00478007, 0.5684542)
+bones/18/scale = Vector3(0.999998, 0.9999953, 0.99995214)
+bones/19/rotation = Quaternion(0.6840604, -0.006947216, -0.0069545666, 0.7293592)
+bones/19/scale = Vector3(1.0000008, 1.000021, 1.0000055)
+bones/20/rotation = Quaternion(-3.5526934e-15, 1.1920937e-07, -8.470344e-22, 1)
+bones/21/position = Vector3(-0.26280168, 0.024662875, -0.045055628)
+bones/21/rotation = Quaternion(-5.6491463e-06, 0.7029519, 0.71123743, -4.997177e-06)
+bones/22/rotation = Quaternion(-3.552734e-15, -5.9604645e-07, 3.3881257e-21, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="personagens/Suit_Male/CharacterArmature/Skeleton3D" index="1" unique_id=755309156 groups=["Interativo"]]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, -0.23954526, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="personagens/Suit_Male/CharacterArmature/Skeleton3D/StaticBody3D" unique_id=298564923]
+transform = Transform3D(0.64, 0, 0, 0, 0.64, 0, 0, 0, 0.64, 0, 0.745035, 0)
+shape = SubResource("CapsuleShape3D_73dkc")
+
+[node name="OldClassy_Male" parent="personagens" unique_id=2075513225 instance=ExtResource("14_73dkc")]
+
+[node name="CharacterArmature" parent="personagens/OldClassy_Male" index="0" unique_id=1590911879]
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 2.2440279, 0.118391216, -2.4779515)
+
+[node name="Skeleton3D" parent="personagens/OldClassy_Male/CharacterArmature" index="0" unique_id=1276159057]
+bones/1/position = Vector3(0.2654247, 0.024662875, -0.04505539)
+bones/1/rotation = Quaternion(5.197531e-06, 0.70295197, 0.71123743, 5.3323706e-06)
+bones/2/position = Vector3(0.0034564112, 0.9652995, 0.098814875)
+bones/2/rotation = Quaternion(-0.0005134229, 0.00269969, 2.4635854e-05, 0.99999624)
+bones/3/position = Vector3(-0.001479934, -0.066774875, -0.04624226)
+bones/3/rotation = Quaternion(-0.050768822, -2.6742947e-07, -2.2761185e-08, 0.99871045)
+bones/4/rotation = Quaternion(0.07463378, 4.3666708e-07, 4.6099295e-08, 0.99721104)
+bones/5/rotation = Quaternion(-0.006839972, -8.26636e-07, 2.9540383e-09, 0.99997663)
+bones/6/rotation = Quaternion(-0.0319862, 2.4197101e-05, 0.00013982158, 0.9994883)
+bones/7/rotation = Quaternion(-4.1911195e-09, -0.00027547523, 1.9087782e-11, 1)
+bones/8/position = Vector3(0.13320172, 0.14084108, 0.013521406)
+bones/9/rotation = Quaternion(0.42728782, 0.23048788, 0.72846997, -0.48335505)
+bones/10/rotation = Quaternion(-0.038043935, 0.22458369, -0.12795778, 0.9652677)
+bones/11/rotation = Quaternion(0.011377628, 0.1560399, -0.009574928, 0.9876389)
+bones/12/position = Vector3(-0.14333758, 0.14004011, 0.013624134)
+bones/13/rotation = Quaternion(-0.4272878, 0.23048781, 0.72847, 0.483355)
+bones/14/rotation = Quaternion(-0.038043834, -0.22458358, 0.12795778, 0.96526766)
+bones/15/rotation = Quaternion(0.011377627, -0.15603992, 0.00957493, 0.9876389)
+bones/16/position = Vector3(0.25302902, -0.016702134, -0.055923738)
+bones/16/rotation = Quaternion(0.9913996, 0.009276152, 0.0020795567, 0.13052395)
+bones/16/scale = Vector3(0.99999774, 0.9999967, 0.99995047)
+bones/17/rotation = Quaternion(0.31938526, 0.003431665, 0.0092116, 0.94757396)
+bones/17/scale = Vector3(1.0000006, 1.0000125, 1.0000095)
+bones/18/position = Vector3(-0.2547122, -0.016702168, -0.05592412)
+bones/18/rotation = Quaternion(0.99162805, -0.011293404, 0.003927168, 0.12857252)
+bones/18/scale = Vector3(0.99999803, 0.99999666, 0.9999508)
+bones/19/rotation = Quaternion(0.31862482, -0.003424231, -0.009214357, 0.9478299)
+bones/19/scale = Vector3(1.0000008, 1.0000123, 1.0000094)
+bones/20/rotation = Quaternion(-3.5526934e-15, 1.1920937e-07, -8.470344e-22, 1)
+bones/21/position = Vector3(-0.26280168, 0.024662875, -0.045055628)
+bones/21/rotation = Quaternion(-5.6491463e-06, 0.7029519, 0.71123743, -4.997177e-06)
+bones/22/rotation = Quaternion(-3.552734e-15, -5.9604645e-07, 3.3881257e-21, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="personagens/OldClassy_Male/CharacterArmature/Skeleton3D" index="1" unique_id=1494151505 groups=["Interativo"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="personagens/OldClassy_Male/CharacterArmature/Skeleton3D/StaticBody3D" unique_id=558268301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6151124, 0)
+shape = SubResource("CapsuleShape3D_5n7j3")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1130396955]
 environment = SubResource("Environment_2kj1b")
+
+[node name="Player" parent="." unique_id=1040967269 instance=ExtResource("1_g08l6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6311687, 0)
 
 [editable path="floorFull"]
 [editable path="walls"]
@@ -3713,3 +3815,5 @@ environment = SubResource("Environment_2kj1b")
 [editable path="desk-redes/Perifericos/computerMouse16"]
 [editable path="desk-redes/Perifericos/chairDesk16"]
 [editable path="desk-gestao"]
+[editable path="personagens/Suit_Male"]
+[editable path="personagens/OldClassy_Male"]
