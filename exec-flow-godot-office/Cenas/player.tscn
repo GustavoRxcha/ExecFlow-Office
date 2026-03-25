@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://qloqeb3q5h7q"]
 
-[ext_resource type="Script" uid="uid://bmxli21mryext" path="res://Player.cs" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://cstrqlcriyf4j" path="res://Scripts/Player.cs" id="1_4flbx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_onrkg"]
 height = 1.2
