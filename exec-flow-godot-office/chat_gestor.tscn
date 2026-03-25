@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://qhjqc2eguq7i"]
+
+[ext_resource type="Script" uid="uid://c05f2sb2h8qku" path="res://chat_gestor.gd" id="1_1gkuq"]
+
+[node name="ChatGestor" type="Control" unique_id=1247929153]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1gkuq")
+
+[node name="Panel" type="Panel" parent="." unique_id=1034914089]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -200.0
+offset_right = 250.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel" unique_id=74872411]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_right = 250.0
+offset_bottom = 350.0
+grow_horizontal = 2
+
+[node name="LineEdit" type="LineEdit" parent="Panel" unique_id=113678242]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -50.0
+offset_right = 430.0
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="Panel" unique_id=260937376]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Enviar"
+
+[node name="Button2" type="Button" parent="Panel" unique_id=1093673683]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -61.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = "Fechar"
+
+[connection signal="text_submitted" from="Panel/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/Button2" to="." method="_on_button_2_pressed"]

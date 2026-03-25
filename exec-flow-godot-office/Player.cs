@@ -9,23 +9,26 @@ public partial class Player : CharacterBody3D
 
 	private Camera3D _camera;
 	private float _mouseSensitivity = 0.003f;
-	
-	// NOVA VARIÁVEL: Referência para o nosso laser
 	private RayCast3D _interactRay; 
+	
+	// Referência para a nossa tela de Chat (Tablet)
+	private Control _chatGestor;
 
 	public override void _Ready()
 	{
 		_camera = GetNode<Camera3D>("Camera3D"); 
-		
-		// NOVA LINHA: Pega o RayCast que colocamos dentro da Câmera
 		_interactRay = GetNode<RayCast3D>("Camera3D/RayCast3D"); 
+		
+		// Pega o ChatGestor que você arrastou para dentro do Player
+		_chatGestor = GetNode<Control>("ChatGestor");
 		
 		Input.MouseMode = Input.MouseModeEnum.Captured; 
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
 	{
-		if (@event is InputEventMouseMotion mouseMotion)
+		// Só permite girar a cabeça se o mouse estiver travado no jogo (Chat fechado)
+		if (@event is InputEventMouseMotion mouseMotion && Input.MouseMode == Input.MouseModeEnum.Captured)
 		{
 			RotateY(-mouseMotion.Relative.X * _mouseSensitivity);
 			_camera.RotateX(-mouseMotion.Relative.Y * _mouseSensitivity);
@@ -40,19 +43,20 @@ public partial class Player : CharacterBody3D
 			Input.MouseMode = Input.MouseModeEnum.Visible;
 		}
 
-		// NOVA LÓGICA DE INTERAÇÃO
+		// LÓGICA DE INTERAÇÃO COM O GESTOR
 		if (Input.IsActionJustPressed("interagir"))
 		{
-			if (_interactRay.IsColliding()) // Se o laser bateu em algo
+			if (_interactRay.IsColliding()) 
 			{
-				// Pega o objeto que o laser bateu
 				Node3D target = (Node3D)_interactRay.GetCollider(); 
 				
-				// Verifica se o objeto tem a etiqueta "Interativo"
 				if (target.IsInGroup("Interativo"))
 				{
-					GD.Print("Chefe, você interagiu com: " + target.Name);
-					// Aqui no futuro nós vamos abrir a tela de chat do agente!
+					// Destrava o mouse para você poder clicar no botão Enviar
+					Input.MouseMode = Input.MouseModeEnum.Visible;
+					
+					// Abre o Tablet na tela
+					_chatGestor.Visible = true;
 				}
 			}
 		}
@@ -60,6 +64,13 @@ public partial class Player : CharacterBody3D
 
 	public override void _PhysicsProcess(double delta)
 	{
+		// Se o Chat estiver aberto, zera a velocidade para o Chefe não andar sozinho
+		if (_chatGestor.Visible)
+		{
+			Velocity = Vector3.Zero;
+			return;
+		}
+
 		Vector3 velocity = Velocity;
 
 		if (!IsOnFloor())
