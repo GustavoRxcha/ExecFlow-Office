@@ -7895,14 +7895,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4749999, 2.5, -0.13500023)
 
 [node name="personagens" type="Node3D" parent="." unique_id=1206788843]
 
-[node name="GestorCopy" type="CharacterBody3D" parent="personagens" unique_id=1010395602 node_paths=PackedStringArray("CarrinhoTrilho") groups=["Interativo"]]
+[node name="Copy" type="CharacterBody3D" parent="personagens" unique_id=1010395602 node_paths=PackedStringArray("CarrinhoTrilho") groups=["Interativo"]]
 transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 2.3995433, 0.080456495, -2.4859562)
 script = ExtResource("13_5n7j3")
 CarrinhoTrilho = NodePath("../../coordenadas/TrilhoGestor/Carrinho")
 
-[node name="CharacterArmature" type="Node3D" parent="personagens/GestorCopy" unique_id=755357059]
+[node name="CharacterArmature" type="Node3D" parent="personagens/Copy" unique_id=755357059]
 
-[node name="Skeleton3D" type="Skeleton3D" parent="personagens/GestorCopy/CharacterArmature" unique_id=87278878]
+[node name="Skeleton3D" type="Skeleton3D" parent="personagens/Copy/CharacterArmature" unique_id=87278878]
 bones/0/name = "Bone"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, -1.4210853e-14, 4.7683704e-07, -1.4210851e-14, 0.9999999, 5.9604638e-08, -4.768371e-07, -5.9604638e-08, 0.9999999, -0.0013114692, -0.0024153697, -0.00011468419)
@@ -8065,16 +8065,16 @@ bones/22/position = Vector3(-0.2593721, 0.72453266, 0.96314675)
 bones/22/rotation = Quaternion(-3.552734e-15, -5.9604645e-07, 3.3881257e-21, 1)
 bones/22/scale = Vector3(1, 1.0000001, 1.0000001)
 
-[node name="Body" type="MeshInstance3D" parent="personagens/GestorCopy/CharacterArmature/Skeleton3D" unique_id=88795356]
+[node name="Body" type="MeshInstance3D" parent="personagens/Copy/CharacterArmature/Skeleton3D" unique_id=88795356]
 mesh = SubResource("ArrayMesh_sjex3")
 skin = SubResource("Skin_p2you")
 skeleton = NodePath("..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="personagens/GestorCopy" unique_id=1566083872]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="personagens/Copy" unique_id=1566083872]
 transform = Transform3D(0.66, 0, -1.4210855e-14, 0, 0.66, 0, 1.4210855e-14, 0, 0.66, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_kilgp")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="personagens/GestorCopy" unique_id=525853363]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="personagens/Copy" unique_id=525853363]
 libraries/ = SubResource("AnimationLibrary_ixt2j")
 
 [node name="Suit_Male" parent="personagens" unique_id=1232324757 instance=ExtResource("13_2ocpx")]
@@ -8137,7 +8137,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16816926, 0)
 curve = SubResource("Curve3D_kilgp")
 
 [node name="Carrinho" type="PathFollow3D" parent="coordenadas/TrilhoGestor" unique_id=1059500872]
-transform = Transform3D(0.99999005, 0, 0, 0, 0.9999915, 0, 0, 0, 0.99999046, 0, 0, -2.482)
+transform = Transform3D(-0.9868648, 0, 0.16148663, 0, 0.9999915, 0, -0.16148658, 0, -0.98686504, 2.3415058, -6.03199e-05, -2.4822867)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1130396955]
 environment = SubResource("Environment_2kj1b")

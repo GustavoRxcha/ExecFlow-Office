@@ -1,36 +1,41 @@
 extends Control
 
-# Criamos referências diretas aos elementos do ecrã
+# Agora esta variável começará vazia e será preenchida pelo Player no momento do clique
+var setor_id: String = "" 
+
 @onready var historico = $Panel/RichTextLabel
 @onready var caixa_texto = $Panel/LineEdit
 
 func _ready():
-	# Assim que a janela abre, o cursor já vai direto para a caixa de texto
+	# Começa escondido para não atrapalhar a visão inicial
+	self.visible = false
+
+# Esta função é a chave! O Player.cs chamará ela ao apertar "E"
+func configurar_chat(nome_do_setor: String):
+	setor_id = nome_do_setor
+	historico.text = "--- Conectado ao Setor: " + setor_id + " ---"
 	caixa_texto.grab_focus()
 
-# Esta função roda quando clica no botão "Enviar"
 func _on_button_pressed():
 	enviar_mensagem(caixa_texto.text)
 
-# Esta função roda quando aperta a tecla "Enter"
 func _on_line_edit_text_submitted(new_text):
 	enviar_mensagem(new_text)
 
-# O motor principal do nosso chat
 func enviar_mensagem(texto: String):
-	# Se a mensagem estiver vazia, não faz nada
-	if texto.strip_edges() == "":
+	if texto.strip_edges() == "" or setor_id == "":
 		return
 		
-	# Adiciona a mensagem do Chefe no histórico
 	historico.text += "\nChefe: " + texto
-	
-	# Limpa a caixa de texto para a próxima ordem
+	historico.text += "\n[SISTEMA]: Solicitando retorno de " + setor_id + "..."
 	caixa_texto.text = ""
 	
-	# Aqui no futuro chamaremos o Python (IA) para gerar a resposta!
+	# Chama o CérebroMestre (Singleton C#) passando o setor dinâmico
+	get_node("/root/CerebroMestre").EnviarOrdem(setor_id, texto, _exibir_resposta)
 
+func _exibir_resposta(resposta: String):
+	historico.text += "\nGestor: " + resposta
 
 func _on_button_2_pressed() -> void:
-	self.visible = false # Esconde o chat
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED # Trava o mouse de volta no jogo
+	self.visible = false 
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

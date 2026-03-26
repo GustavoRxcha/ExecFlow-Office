@@ -15,6 +15,10 @@ run/main_scene="uid://c4cva7mncpn00"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+CerebroMestre="*uid://m1twaylcj2tc"
+
 [dotnet]
 
 project/assembly_name="ExecFlow_Godot_Office"

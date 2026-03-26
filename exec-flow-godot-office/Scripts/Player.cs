@@ -43,7 +43,7 @@ public partial class Player : CharacterBody3D
 			Input.MouseMode = Input.MouseModeEnum.Visible;
 		}
 
-		// LÓGICA DE INTERAÇÃO COM O GESTOR
+		// LÓGICA DE INTERAÇÃO DINÂMICA COM OS GESTORES
 		if (Input.IsActionJustPressed("interagir"))
 		{
 			if (_interactRay.IsColliding()) 
@@ -52,7 +52,13 @@ public partial class Player : CharacterBody3D
 				
 				if (target.IsInGroup("Interativo"))
 				{
-					// Destrava o mouse para você poder clicar no botão Enviar
+					// Pega o nome do nó no Godot (ex: "Copy" ou "TI")
+					string nomeSetor = target.Name; 
+					
+					// Injeta o nome no script GDScript do Chat para torná-lo dinâmico
+					_chatGestor.Call("configurar_chat", nomeSetor);
+					
+					// Destrava o mouse para você poder clicar no tablet
 					Input.MouseMode = Input.MouseModeEnum.Visible;
 					
 					// Abre o Tablet na tela
@@ -64,7 +70,7 @@ public partial class Player : CharacterBody3D
 
 	public override void _PhysicsProcess(double delta)
 	{
-		// Se o Chat estiver aberto, zera a velocidade para o Chefe não andar sozinho
+		// Se o Chat estiver aberto, o jogador fica parado
 		if (_chatGestor.Visible)
 		{
 			Velocity = Vector3.Zero;
