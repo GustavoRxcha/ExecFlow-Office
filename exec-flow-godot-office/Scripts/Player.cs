@@ -11,7 +11,6 @@ public partial class Player : CharacterBody3D
 	private float _mouseSensitivity = 0.003f;
 	private RayCast3D _interactRay; 
 	
-	// Referência para a nossa tela de Chat (Tablet)
 	private Control _chatGestor;
 
 	public override void _Ready()
@@ -19,15 +18,12 @@ public partial class Player : CharacterBody3D
 		_camera = GetNode<Camera3D>("Camera3D"); 
 		_interactRay = GetNode<RayCast3D>("Camera3D/RayCast3D"); 
 		
-		// Pega o ChatGestor que você arrastou para dentro do Player
 		_chatGestor = GetNode<Control>("ChatGestor");
-		
 		Input.MouseMode = Input.MouseModeEnum.Captured; 
 	}
 
 	public override void _UnhandledInput(InputEvent @event)
 	{
-		// Só permite girar a cabeça se o mouse estiver travado no jogo (Chat fechado)
 		if (@event is InputEventMouseMotion mouseMotion && Input.MouseMode == Input.MouseModeEnum.Captured)
 		{
 			RotateY(-mouseMotion.Relative.X * _mouseSensitivity);
@@ -43,7 +39,6 @@ public partial class Player : CharacterBody3D
 			Input.MouseMode = Input.MouseModeEnum.Visible;
 		}
 
-		// LÓGICA DE INTERAÇÃO DINÂMICA COM OS GESTORES
 		if (Input.IsActionJustPressed("interagir"))
 		{
 			if (_interactRay.IsColliding()) 
@@ -52,16 +47,10 @@ public partial class Player : CharacterBody3D
 				
 				if (target.IsInGroup("Interativo"))
 				{
-					// Pega o nome do nó no Godot (ex: "Copy" ou "TI")
-					string nomeSetor = target.Name; 
+					// MUDANÇA: Passamos o próprio objeto 'target' e não só o nome
+					_chatGestor.Call("configurar_chat", target);
 					
-					// Injeta o nome no script GDScript do Chat para torná-lo dinâmico
-					_chatGestor.Call("configurar_chat", nomeSetor);
-					
-					// Destrava o mouse para você poder clicar no tablet
 					Input.MouseMode = Input.MouseModeEnum.Visible;
-					
-					// Abre o Tablet na tela
 					_chatGestor.Visible = true;
 				}
 			}
@@ -70,7 +59,6 @@ public partial class Player : CharacterBody3D
 
 	public override void _PhysicsProcess(double delta)
 	{
-		// Se o Chat estiver aberto, o jogador fica parado
 		if (_chatGestor.Visible)
 		{
 			Velocity = Vector3.Zero;

@@ -122,7 +122,7 @@ def gerar_roteiro(pedido: Pedido):
         - Não adicione comentários de ajuda, sugestões de uso ou saudações (ex: "Aqui está seu post").
         - Não inclua frases como "Copie e cole" ou "Espero que ajude".
         ''',
-        expected_output='O texto final refinado e completo, sem qualquer comentário ou metadados.',
+        expected_output='O texto final refinado e completo, não adicione NENHUMA observação sua, sem qualquer comentário ou metadados, traga APENAS o conteúdo solicitado NÃO quero sua opinião ou sugestão.',
         agent=roteirista
     )
 

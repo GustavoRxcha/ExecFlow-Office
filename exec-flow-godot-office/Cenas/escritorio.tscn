@@ -1021,8 +1021,8 @@ bind/22/bone = -1
 bind/22/pose = Transform3D(1, 0, 7.152559e-07, -5.684342e-14, 1.0000001, -1.192093e-07, -7.152557e-07, 0, 1.0000001, 0.2606824, -0.72211725, -0.9630323)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kilgp"]
-radius = 0.3359375
-height = 1.9135742
+radius = 0.8203125
+height = 4.5768433
 
 [sub_resource type="Animation" id="Animation_5btsj"]
 resource_name = "Death"
@@ -5180,7 +5180,7 @@ background_energy_multiplier = 1.5
 [node name="floorFull" parent="." unique_id=463089682 instance=ExtResource("3_i533g")]
 transform = Transform3D(10, 0, 0, 0, 2, 0, 0, 0, 15, 0, 0, 0)
 
-[node name="floorFull(Clone)" parent="floorFull" index="0" unique_id=1334969866]
+[node name="floorFull(Clone)" parent="floorFull" index="0" unique_id=2058181375]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.58308136, 0, 0.09200001)
 mesh = SubResource("ArrayMesh_2kj1b")
 
@@ -5191,7 +5191,7 @@ shape = SubResource("ConcavePolygonShape3D_2kj1b")
 
 [node name="walls" parent="." unique_id=1087083416 instance=ExtResource("4_2kj1b")]
 
-[node name="wall(Clone)" parent="walls" index="0" unique_id=1070042079]
+[node name="wall(Clone)" parent="walls" index="0" unique_id=1559770565]
 transform = Transform3D(-9.93, 0, -1.509958e-07, 0, 2, 0, 1.4993884e-06, 0, -1, 4.158, 0.085, 1.323)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/wall(Clone)" index="0" unique_id=1460993649]
@@ -5210,7 +5210,7 @@ shape = SubResource("ConcavePolygonShape3D_jen72")
 
 [node name="wallWindowSlide" parent="walls" unique_id=17925203 instance=ExtResource("3_faq3j")]
 
-[node name="wallWindowSlide(Clone)" parent="walls/wallWindowSlide" index="0" unique_id=1316974123]
+[node name="wallWindowSlide(Clone)" parent="walls/wallWindowSlide" index="0" unique_id=1663308754]
 transform = Transform3D(-1.3113416e-07, 0, 1, 0, 2, 0, -3, 0, -4.371139e-08, -5.757, 0.085, 1.374)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/wallWindowSlide/wallWindowSlide(Clone)" index="2" unique_id=1546665517]
@@ -5373,7 +5373,7 @@ shape = SubResource("ConcavePolygonShape3D_2ocpx")
 
 [node name="wallWindow" parent="walls" unique_id=1113330006 instance=ExtResource("4_oqpno")]
 
-[node name="wallWindow(Clone)" parent="walls/wallWindow" index="0" unique_id=1242836873]
+[node name="wallWindow(Clone)" parent="walls/wallWindow" index="0" unique_id=2074648731]
 transform = Transform3D(5.745, 0, 0, 0, 2, 0, 0, 0, 1, -5.784485, 0, -7)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/wallWindow/wallWindow(Clone)" index="1" unique_id=63027442]
@@ -5396,7 +5396,7 @@ shape = SubResource("ConcavePolygonShape3D_73dkc")
 
 [node name="wallDoorway" parent="walls" unique_id=646066124 instance=ExtResource("5_2s007")]
 
-[node name="wallDoorway(Clone)" parent="walls/wallDoorway" index="0" unique_id=1994967291]
+[node name="wallDoorway(Clone)" parent="walls/wallDoorway" index="0" unique_id=585050714]
 transform = Transform3D(-1.1933209e-07, 0, 1, 0, 2, 0, -2.73, 0, -4.371139e-08, 0, 0, -7)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="walls/wallDoorway/wallDoorway(Clone)" index="0" unique_id=839386543]
@@ -5406,7 +5406,7 @@ shape = SubResource("ConcavePolygonShape3D_5n7j3")
 
 [node name="doors" parent="." unique_id=1940278222 instance=ExtResource("6_6yvp7")]
 
-[node name="doorwayFront(Clone)" parent="doors" index="0" unique_id=906154137]
+[node name="doorwayFront(Clone)" parent="doors" index="0" unique_id=1117262520]
 transform = Transform3D(-2.3, 0, -2.1698098e-07, 0, 1.869, 0, 3.4729032e-07, 0, -1.437, 0.433882, 0, 1.2654411)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="doors/doorwayFront(Clone)" index="1" unique_id=1695781873]
@@ -5417,7 +5417,7 @@ shape = SubResource("ConcavePolygonShape3D_5nshd")
 [node name="desk-projetos" parent="." unique_id=862469973 instance=ExtResource("2_p7by7")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.26724392, -2.4371617)
 
-[node name="desk(Clone)" parent="desk-projetos" index="0" unique_id=1686742021]
+[node name="desk(Clone)" parent="desk-projetos" index="0" unique_id=656865315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6860485, -0.116342865, 1.2432466)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/desk(Clone)" index="1" unique_id=2110337128]
@@ -5520,12 +5520,12 @@ shape = SubResource("ConcavePolygonShape3D_p7by7")
 
 [node name="computerKeyboard" parent="desk-projetos/Perifericos" unique_id=2034573868 instance=ExtResource("8_2ocpx")]
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen" parent="desk-projetos/Perifericos" unique_id=1241252029 instance=ExtResource("9_73dkc")]
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen/computerScreen(Clone)" index="0" unique_id=2004188499]
@@ -5535,15 +5535,15 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 
 [node name="computerMouse" parent="desk-projetos/Perifericos" unique_id=2038687406 instance=ExtResource("10_5n7j3")]
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk" parent="desk-projetos/Perifericos" unique_id=1473456701 instance=ExtResource("11_5nshd")]
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/chairDesk/chairDesk(Clone)" index="1" unique_id=1957615678]
@@ -5554,13 +5554,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard2" parent="desk-projetos/Perifericos" unique_id=1868540564 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, 0)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard2" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard2" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen2" parent="desk-projetos/Perifericos" unique_id=388776160 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, 0)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen2" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen2" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen2/computerScreen(Clone)" index="0" unique_id=1341415684]
@@ -5571,16 +5571,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse2" parent="desk-projetos/Perifericos" unique_id=1532445341 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, 0)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse2" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse2" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk2" parent="desk-projetos/Perifericos" unique_id=1620108449 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, 0)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk2" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk2" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/chairDesk2/chairDesk(Clone)" index="1" unique_id=261341091]
@@ -5591,13 +5591,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard3" parent="desk-projetos/Perifericos" unique_id=82951305 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, 0)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard3" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard3" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen3" parent="desk-projetos/Perifericos" unique_id=1790155613 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, 0)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen3" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen3" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen3/computerScreen(Clone)" index="0" unique_id=363172885]
@@ -5608,16 +5608,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse3" parent="desk-projetos/Perifericos" unique_id=2137729893 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, 0)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse3" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse3" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk3" parent="desk-projetos/Perifericos" unique_id=664259258 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, 0)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk3" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk3" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/chairDesk3/chairDesk(Clone)" index="1" unique_id=874971547]
@@ -5628,13 +5628,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard4" parent="desk-projetos/Perifericos" unique_id=527993604 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, 0)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard4" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard4" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen4" parent="desk-projetos/Perifericos" unique_id=611489571 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, 0)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen4" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen4" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen4/computerScreen(Clone)" index="0" unique_id=93589149]
@@ -5645,19 +5645,19 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse4" parent="desk-projetos/Perifericos" unique_id=1279681405 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, 0)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse4" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse4" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="computerKeyboard5" parent="desk-projetos/Perifericos" unique_id=411160182 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -2.1753016)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard5" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard5" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen5" parent="desk-projetos/Perifericos" unique_id=554659966 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -2.1753016)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen5" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen5" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen5/computerScreen(Clone)" index="0" unique_id=1314847188]
@@ -5668,16 +5668,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse5" parent="desk-projetos/Perifericos" unique_id=330240237 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -2.1753016)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse5" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse5" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk5" parent="desk-projetos/Perifericos" unique_id=933354640 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -2.1753016)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk5" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk5" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/chairDesk5/chairDesk(Clone)" index="1" unique_id=1068496045]
@@ -5688,13 +5688,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard6" parent="desk-projetos/Perifericos" unique_id=1414961377 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -2.1753016)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard6" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard6" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen6" parent="desk-projetos/Perifericos" unique_id=1648097644 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -2.1753016)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen6" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen6" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen6/computerScreen(Clone)" index="0" unique_id=557725562]
@@ -5705,16 +5705,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse6" parent="desk-projetos/Perifericos" unique_id=1157296341 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -2.1753016)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse6" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse6" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk6" parent="desk-projetos/Perifericos" unique_id=1194046552 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -2.1753016)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk6" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk6" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/chairDesk6/chairDesk(Clone)" index="1" unique_id=1560771976]
@@ -5725,13 +5725,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard7" parent="desk-projetos/Perifericos" unique_id=1018872136 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -2.1753016)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard7" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard7" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen7" parent="desk-projetos/Perifericos" unique_id=477694042 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -2.1753016)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen7" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen7" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen7/computerScreen(Clone)" index="0" unique_id=2047750500]
@@ -5742,16 +5742,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse7" parent="desk-projetos/Perifericos" unique_id=782987790 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -2.1753016)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse7" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse7" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk7" parent="desk-projetos/Perifericos" unique_id=1643555196 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -2.1753016)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk7" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk7" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-projetos/Perifericos/chairDesk7/chairDesk(Clone)" index="1" unique_id=1016651696]
@@ -5766,10 +5766,10 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="chairDesk8" parent="desk-projetos/Perifericos" unique_id=1109733324 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0903287, 0, -2.1753016)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk8" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk8" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-projetos/Perifericos/chairDesk8/chairDesk(Clone)" index="1" unique_id=549693972]
@@ -5784,13 +5784,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard8" parent="desk-projetos/Perifericos" unique_id=1053859779 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -2.1753016)
 
-[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard8" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-projetos/Perifericos/computerKeyboard8" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen8" parent="desk-projetos/Perifericos" unique_id=1833475646 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -2.1753016)
 
-[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen8" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-projetos/Perifericos/computerScreen8" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/computerScreen8/computerScreen(Clone)" index="0" unique_id=1485351443]
@@ -5801,16 +5801,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse8" parent="desk-projetos/Perifericos" unique_id=2006377256 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -2.1753016)
 
-[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse8" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-projetos/Perifericos/computerMouse8" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk4" parent="desk-projetos/Perifericos" unique_id=450614686 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, 0)
 
-[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk4" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-projetos/Perifericos/chairDesk4" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-projetos/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-projetos/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-projetos/Perifericos/chairDesk4/chairDesk(Clone)" index="1" unique_id=1489136808]
@@ -5821,7 +5821,7 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="desk-sistemas" parent="." unique_id=1920232606 instance=ExtResource("2_p7by7")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.26724392, -5.4371614)
 
-[node name="desk(Clone)" parent="desk-sistemas" index="0" unique_id=1686742021]
+[node name="desk(Clone)" parent="desk-sistemas" index="0" unique_id=656865315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6860485, -0.116342865, 1.2432466)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/desk(Clone)" index="1" unique_id=1441616303]
@@ -5925,13 +5925,13 @@ shape = SubResource("ConcavePolygonShape3D_p7by7")
 [node name="computerKeyboard" parent="desk-sistemas/Perifericos" unique_id=935506902 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen" parent="desk-sistemas/Perifericos" unique_id=604769723 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen/computerScreen(Clone)" index="0" unique_id=678611530]
@@ -5942,16 +5942,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse" parent="desk-sistemas/Perifericos" unique_id=414136728 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk" parent="desk-sistemas/Perifericos" unique_id=1521624674 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/chairDesk/chairDesk(Clone)" index="1" unique_id=1819346664]
@@ -5962,13 +5962,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard2" parent="desk-sistemas/Perifericos" unique_id=1117436988 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard2" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard2" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen2" parent="desk-sistemas/Perifericos" unique_id=446022830 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen2" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen2" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen2/computerScreen(Clone)" index="0" unique_id=1184715867]
@@ -5979,16 +5979,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse2" parent="desk-sistemas/Perifericos" unique_id=269261169 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse2" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse2" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk2" parent="desk-sistemas/Perifericos" unique_id=1233901232 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk2" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk2" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/chairDesk2/chairDesk(Clone)" index="1" unique_id=1513509120]
@@ -5999,13 +5999,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard3" parent="desk-sistemas/Perifericos" unique_id=1588865015 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard3" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard3" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen3" parent="desk-sistemas/Perifericos" unique_id=283169517 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen3" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen3" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen3/computerScreen(Clone)" index="0" unique_id=1803709955]
@@ -6016,16 +6016,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse3" parent="desk-sistemas/Perifericos" unique_id=867588103 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse3" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse3" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk3" parent="desk-sistemas/Perifericos" unique_id=1823986739 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk3" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk3" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/chairDesk3/chairDesk(Clone)" index="1" unique_id=728494502]
@@ -6036,13 +6036,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard4" parent="desk-sistemas/Perifericos" unique_id=1324898903 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard4" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard4" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen4" parent="desk-sistemas/Perifericos" unique_id=1954542443 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen4" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen4" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen4/computerScreen(Clone)" index="0" unique_id=1001634411]
@@ -6053,19 +6053,19 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse4" parent="desk-sistemas/Perifericos" unique_id=1856803013 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse4" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse4" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="computerKeyboard5" parent="desk-sistemas/Perifericos" unique_id=1665396587 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard5" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard5" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen5" parent="desk-sistemas/Perifericos" unique_id=1006071476 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen5" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen5" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen5/computerScreen(Clone)" index="0" unique_id=556875272]
@@ -6076,16 +6076,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse5" parent="desk-sistemas/Perifericos" unique_id=40421202 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse5" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse5" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk5" parent="desk-sistemas/Perifericos" unique_id=256937992 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk5" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk5" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/chairDesk5/chairDesk(Clone)" index="1" unique_id=948491670]
@@ -6096,13 +6096,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard6" parent="desk-sistemas/Perifericos" unique_id=478869015 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard6" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard6" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen6" parent="desk-sistemas/Perifericos" unique_id=619725337 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen6" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen6" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen6/computerScreen(Clone)" index="0" unique_id=703147017]
@@ -6113,16 +6113,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse6" parent="desk-sistemas/Perifericos" unique_id=683212882 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse6" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse6" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk6" parent="desk-sistemas/Perifericos" unique_id=1370909084 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk6" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk6" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/chairDesk6/chairDesk(Clone)" index="1" unique_id=1568599515]
@@ -6133,13 +6133,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard7" parent="desk-sistemas/Perifericos" unique_id=1091849209 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard7" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard7" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen7" parent="desk-sistemas/Perifericos" unique_id=1404241441 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen7" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen7" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen7/computerScreen(Clone)" index="0" unique_id=846480585]
@@ -6150,16 +6150,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse7" parent="desk-sistemas/Perifericos" unique_id=1921206610 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse7" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse7" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk7" parent="desk-sistemas/Perifericos" unique_id=1580446416 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk7" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk7" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-sistemas/Perifericos/chairDesk7/chairDesk(Clone)" index="1" unique_id=1533808038]
@@ -6174,10 +6174,10 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="chairDesk8" parent="desk-sistemas/Perifericos" unique_id=1355325278 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0903287, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk8" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk8" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-sistemas/Perifericos/chairDesk8/chairDesk(Clone)" index="1" unique_id=575984150]
@@ -6192,13 +6192,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard8" parent="desk-sistemas/Perifericos" unique_id=2068405856 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard8" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-sistemas/Perifericos/computerKeyboard8" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen8" parent="desk-sistemas/Perifericos" unique_id=1053382068 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen8" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-sistemas/Perifericos/computerScreen8" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/computerScreen8/computerScreen(Clone)" index="0" unique_id=1015315891]
@@ -6209,16 +6209,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse8" parent="desk-sistemas/Perifericos" unique_id=1644261810 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse8" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-sistemas/Perifericos/computerMouse8" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk4" parent="desk-sistemas/Perifericos" unique_id=1762383474 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk4" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-sistemas/Perifericos/chairDesk4" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-sistemas/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-sistemas/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-sistemas/Perifericos/chairDesk4/chairDesk(Clone)" index="1" unique_id=2018181315]
@@ -6229,7 +6229,7 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="desk-help" parent="." unique_id=1474885142 instance=ExtResource("2_p7by7")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.26724392, -10.232905)
 
-[node name="desk(Clone)" parent="desk-help" index="0" unique_id=1686742021]
+[node name="desk(Clone)" parent="desk-help" index="0" unique_id=656865315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6860485, -0.116342865, 1.2432466)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/desk(Clone)" index="1" unique_id=2078499149]
@@ -6437,13 +6437,13 @@ shape = SubResource("ConcavePolygonShape3D_p7by7")
 [node name="computerKeyboard" parent="desk-help/Perifericos" unique_id=297033527 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.832115)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen" parent="desk-help/Perifericos" unique_id=268515358 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.832115)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen/computerScreen(Clone)" index="0" unique_id=680674113]
@@ -6454,16 +6454,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse" parent="desk-help/Perifericos" unique_id=389576590 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.832115)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk" parent="desk-help/Perifericos" unique_id=207771209 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.832115)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk/chairDesk(Clone)" index="1" unique_id=309687112]
@@ -6474,13 +6474,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard2" parent="desk-help/Perifericos" unique_id=1005550669 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -7.832115)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard2" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard2" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen2" parent="desk-help/Perifericos" unique_id=586525917 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -7.832115)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen2" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen2" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen2/computerScreen(Clone)" index="0" unique_id=285539086]
@@ -6491,16 +6491,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse2" parent="desk-help/Perifericos" unique_id=1122259126 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -7.832115)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse2" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse2" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk2" parent="desk-help/Perifericos" unique_id=601031633 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -7.832115)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk2" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk2" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk2/chairDesk(Clone)" index="1" unique_id=1005320235]
@@ -6511,13 +6511,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard3" parent="desk-help/Perifericos" unique_id=1686057660 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -7.832115)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard3" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard3" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen3" parent="desk-help/Perifericos" unique_id=740244037 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -7.832115)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen3" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen3" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen3/computerScreen(Clone)" index="0" unique_id=572878708]
@@ -6528,16 +6528,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse3" parent="desk-help/Perifericos" unique_id=700106591 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -7.832115)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse3" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse3" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk3" parent="desk-help/Perifericos" unique_id=2055552011 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -7.832115)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk3" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk3" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk3/chairDesk(Clone)" index="1" unique_id=2058899392]
@@ -6548,13 +6548,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard4" parent="desk-help/Perifericos" unique_id=14416949 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -7.832115)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard4" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard4" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen4" parent="desk-help/Perifericos" unique_id=750588693 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -7.832115)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen4" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen4" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen4/computerScreen(Clone)" index="0" unique_id=702740448]
@@ -6565,19 +6565,19 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse4" parent="desk-help/Perifericos" unique_id=1488301062 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -7.832115)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse4" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse4" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="computerKeyboard5" parent="desk-help/Perifericos" unique_id=1964341068 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -10.007416)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard5" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard5" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen5" parent="desk-help/Perifericos" unique_id=530664137 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -10.007416)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen5" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen5" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen5/computerScreen(Clone)" index="0" unique_id=1925392628]
@@ -6588,16 +6588,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse5" parent="desk-help/Perifericos" unique_id=924043790 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -10.007416)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse5" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse5" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk5" parent="desk-help/Perifericos" unique_id=540430073 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -10.007416)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk5" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk5" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk5/chairDesk(Clone)" index="1" unique_id=1976218172]
@@ -6608,13 +6608,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard6" parent="desk-help/Perifericos" unique_id=388026724 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -10.007416)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard6" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard6" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen6" parent="desk-help/Perifericos" unique_id=505056412 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -10.007416)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen6" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen6" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen6/computerScreen(Clone)" index="0" unique_id=1375390764]
@@ -6625,16 +6625,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse6" parent="desk-help/Perifericos" unique_id=854536324 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -10.007416)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse6" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse6" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk6" parent="desk-help/Perifericos" unique_id=1246913339 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -10.007416)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk6" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk6" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk6/chairDesk(Clone)" index="1" unique_id=746654672]
@@ -6645,13 +6645,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard7" parent="desk-help/Perifericos" unique_id=1962791818 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -10.007416)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard7" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard7" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen7" parent="desk-help/Perifericos" unique_id=86067251 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -10.007416)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen7" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen7" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen7/computerScreen(Clone)" index="0" unique_id=2014997547]
@@ -6662,16 +6662,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse7" parent="desk-help/Perifericos" unique_id=493088894 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -10.007416)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse7" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse7" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk7" parent="desk-help/Perifericos" unique_id=622221248 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -10.007416)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk7" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk7" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-help/Perifericos/chairDesk7/chairDesk(Clone)" index="1" unique_id=525384863]
@@ -6686,10 +6686,10 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="chairDesk8" parent="desk-help/Perifericos" unique_id=1131503000 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0903287, 0, -10.007416)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk8" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk8" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-help/Perifericos/chairDesk8/chairDesk(Clone)" index="1" unique_id=1910913999]
@@ -6704,13 +6704,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard8" parent="desk-help/Perifericos" unique_id=1494497787 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -10.007416)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard8" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard8" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen8" parent="desk-help/Perifericos" unique_id=1596178615 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -10.007416)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen8" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen8" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen8/computerScreen(Clone)" index="0" unique_id=2057243587]
@@ -6721,16 +6721,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse8" parent="desk-help/Perifericos" unique_id=407307745 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -10.007416)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse8" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse8" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk4" parent="desk-help/Perifericos" unique_id=856886052 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -7.832115)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk4" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk4" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk4/chairDesk(Clone)" index="1" unique_id=1267593449]
@@ -6741,13 +6741,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard9" parent="desk-help/Perifericos" unique_id=1634705038 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.55147)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard9" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard9" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen9" parent="desk-help/Perifericos" unique_id=720659823 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.55147)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen9" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen9" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen9/computerScreen(Clone)" index="0" unique_id=1482792810]
@@ -6758,16 +6758,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse9" parent="desk-help/Perifericos" unique_id=597360950 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.55147)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse9" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse9" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk9" parent="desk-help/Perifericos" unique_id=653171837 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.55147)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk9" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk9" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk9/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk9/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk9/chairDesk(Clone)" index="1" unique_id=1986475849]
@@ -6778,13 +6778,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard10" parent="desk-help/Perifericos" unique_id=1240699781 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -10.55147)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard10" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard10" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen10" parent="desk-help/Perifericos" unique_id=1935348692 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -10.55147)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen10" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen10" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen10/computerScreen(Clone)" index="0" unique_id=1269336266]
@@ -6795,16 +6795,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse10" parent="desk-help/Perifericos" unique_id=283176500 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -10.55147)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse10" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse10" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk10" parent="desk-help/Perifericos" unique_id=1546902598 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -10.55147)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk10" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk10" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk10/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk10/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk10/chairDesk(Clone)" index="1" unique_id=638593093]
@@ -6815,13 +6815,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard11" parent="desk-help/Perifericos" unique_id=1771823462 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -10.55147)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard11" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard11" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen11" parent="desk-help/Perifericos" unique_id=610749884 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -10.55147)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen11" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen11" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen11/computerScreen(Clone)" index="0" unique_id=1759579074]
@@ -6832,16 +6832,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse11" parent="desk-help/Perifericos" unique_id=1681809864 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -10.55147)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse11" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse11" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk11" parent="desk-help/Perifericos" unique_id=2067833092 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -10.55147)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk11" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk11" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk11/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk11/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk11/chairDesk(Clone)" index="1" unique_id=100688975]
@@ -6852,13 +6852,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard12" parent="desk-help/Perifericos" unique_id=383039618 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -10.55147)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard12" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard12" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen12" parent="desk-help/Perifericos" unique_id=40728245 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -10.55147)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen12" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen12" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen12/computerScreen(Clone)" index="0" unique_id=1905491209]
@@ -6869,19 +6869,19 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse12" parent="desk-help/Perifericos" unique_id=1102591754 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -10.55147)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse12" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse12" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="computerKeyboard13" parent="desk-help/Perifericos" unique_id=669048812 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -12.72677)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard13" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard13" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen13" parent="desk-help/Perifericos" unique_id=429566049 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -12.72677)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen13" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen13" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen13/computerScreen(Clone)" index="0" unique_id=1888858499]
@@ -6892,16 +6892,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse13" parent="desk-help/Perifericos" unique_id=1372177276 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -12.72677)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse13" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse13" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk12" parent="desk-help/Perifericos" unique_id=592945383 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -12.72677)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk12" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk12" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk12/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk12/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk12/chairDesk(Clone)" index="1" unique_id=1107988202]
@@ -6912,13 +6912,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard14" parent="desk-help/Perifericos" unique_id=23986682 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -12.72677)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard14" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard14" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen14" parent="desk-help/Perifericos" unique_id=1415295734 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -12.72677)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen14" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen14" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen14/computerScreen(Clone)" index="0" unique_id=1969110688]
@@ -6929,16 +6929,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse14" parent="desk-help/Perifericos" unique_id=1498486012 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -12.72677)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse14" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse14" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk13" parent="desk-help/Perifericos" unique_id=156245956 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -12.72677)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk13" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk13" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk13/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk13/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk13/chairDesk(Clone)" index="1" unique_id=1200489634]
@@ -6949,13 +6949,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard15" parent="desk-help/Perifericos" unique_id=618822148 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -12.72677)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard15" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard15" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen15" parent="desk-help/Perifericos" unique_id=330037231 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -12.72677)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen15" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen15" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen15/computerScreen(Clone)" index="0" unique_id=2106730303]
@@ -6966,16 +6966,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse15" parent="desk-help/Perifericos" unique_id=1790726065 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -12.72677)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse15" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse15" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk14" parent="desk-help/Perifericos" unique_id=1293713242 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -12.72677)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk14" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk14" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk14/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk14/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-help/Perifericos/chairDesk14/chairDesk(Clone)" index="1" unique_id=1815728448]
@@ -6990,10 +6990,10 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="chairDesk15" parent="desk-help/Perifericos" unique_id=331755141 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0903287, 0, -12.72677)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk15" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk15" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk15/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk15/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="chair2" type="MeshInstance3D" parent="desk-help/Perifericos/chairDesk15/chairDesk(Clone)" index="1" unique_id=887402333]
@@ -7008,13 +7008,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard16" parent="desk-help/Perifericos" unique_id=2015638870 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -12.72677)
 
-[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard16" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-help/Perifericos/computerKeyboard16" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen16" parent="desk-help/Perifericos" unique_id=435841269 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -12.72677)
 
-[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen16" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-help/Perifericos/computerScreen16" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/computerScreen16/computerScreen(Clone)" index="0" unique_id=365734787]
@@ -7025,16 +7025,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse16" parent="desk-help/Perifericos" unique_id=1563270443 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -12.72677)
 
-[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse16" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-help/Perifericos/computerMouse16" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk16" parent="desk-help/Perifericos" unique_id=1362122582 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -10.55147)
 
-[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk16" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-help/Perifericos/chairDesk16" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-help/Perifericos/chairDesk16/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-help/Perifericos/chairDesk16/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-help/Perifericos/chairDesk16/chairDesk(Clone)" index="1" unique_id=1350433134]
@@ -7045,7 +7045,7 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="desk-redes" parent="." unique_id=852362148 instance=ExtResource("2_p7by7")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 6.081604, 0.26724392, -10.232905)
 
-[node name="desk(Clone)" parent="desk-redes" index="0" unique_id=1686742021]
+[node name="desk(Clone)" parent="desk-redes" index="0" unique_id=656865315]
 transform = Transform3D(0.8000001, 0, 0, 0, 1, 0, 0, 0, 1, -3.0181985, -0.116342865, 1.0919347)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/desk(Clone)" index="1" unique_id=2118243978]
@@ -7201,13 +7201,13 @@ shape = SubResource("ConcavePolygonShape3D_p7by7")
 [node name="computerKeyboard" parent="desk-redes/Perifericos" unique_id=467983415 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen" parent="desk-redes/Perifericos" unique_id=1614535316 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen/computerScreen(Clone)" index="0" unique_id=1723740471]
@@ -7218,16 +7218,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse" parent="desk-redes/Perifericos" unique_id=1111375892 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk" parent="desk-redes/Perifericos" unique_id=1690815635 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7239,13 +7239,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard2" parent="desk-redes/Perifericos" unique_id=175560070 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard2" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard2" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen2" parent="desk-redes/Perifericos" unique_id=1878255363 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen2" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen2" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen2/computerScreen(Clone)" index="0" unique_id=206203456]
@@ -7256,16 +7256,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse2" parent="desk-redes/Perifericos" unique_id=1373655827 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse2" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse2" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk2" parent="desk-redes/Perifericos" unique_id=1913447975 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.026442, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk2" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk2" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk2/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7277,13 +7277,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard3" parent="desk-redes/Perifericos" unique_id=1643944636 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard3" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard3" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen3" parent="desk-redes/Perifericos" unique_id=340816927 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen3" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen3" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen3/computerScreen(Clone)" index="0" unique_id=914911531]
@@ -7294,16 +7294,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse3" parent="desk-redes/Perifericos" unique_id=1817205711 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse3" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse3" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk3" parent="desk-redes/Perifericos" unique_id=1423677796 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0541325, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk3" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk3" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk3/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7315,13 +7315,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard4" parent="desk-redes/Perifericos" unique_id=307873999 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard4" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard4" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen4" parent="desk-redes/Perifericos" unique_id=1645472084 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen4" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen4" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen4/computerScreen(Clone)" index="0" unique_id=1932554947]
@@ -7332,19 +7332,19 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse4" parent="desk-redes/Perifericos" unique_id=613817521 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse4" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse4" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="computerKeyboard5" parent="desk-redes/Perifericos" unique_id=1086098764 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard5" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard5" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen5" parent="desk-redes/Perifericos" unique_id=1663869937 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen5" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen5" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen5/computerScreen(Clone)" index="0" unique_id=866407737]
@@ -7355,16 +7355,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse5" parent="desk-redes/Perifericos" unique_id=300177552 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse5" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse5" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk5" parent="desk-redes/Perifericos" unique_id=1898402931 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.083403, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk5" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk5" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk5/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7376,13 +7376,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard6" parent="desk-redes/Perifericos" unique_id=936568217 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard6" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard6" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen6" parent="desk-redes/Perifericos" unique_id=970698827 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen6" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen6" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen6/computerScreen(Clone)" index="0" unique_id=852042142]
@@ -7393,16 +7393,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse6" parent="desk-redes/Perifericos" unique_id=880412680 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse6" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse6" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk6" parent="desk-redes/Perifericos" unique_id=1613248329 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -9.056961, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk6" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk6" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk6/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7414,13 +7414,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard7" parent="desk-redes/Perifericos" unique_id=577716476 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard7" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard7" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen7" parent="desk-redes/Perifericos" unique_id=1915351649 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen7" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen7" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen7/computerScreen(Clone)" index="0" unique_id=174655515]
@@ -7431,16 +7431,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse7" parent="desk-redes/Perifericos" unique_id=826907278 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse7" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse7" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk7" parent="desk-redes/Perifericos" unique_id=390216668 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -8.02927, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk7" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk7" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk7/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7456,10 +7456,10 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="chairDesk8" parent="desk-redes/Perifericos" unique_id=87271692 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0903287, 0, -5.2386656)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk8" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk8" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk8/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7475,13 +7475,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard8" parent="desk-redes/Perifericos" unique_id=227103830 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -5.2386656)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard8" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard8" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen8" parent="desk-redes/Perifericos" unique_id=179265329 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -5.2386656)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen8" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen8" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen8/computerScreen(Clone)" index="0" unique_id=709119574]
@@ -7492,16 +7492,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse8" parent="desk-redes/Perifericos" unique_id=1315622043 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -7.0587935, 0, -5.2386656)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse8" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse8" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk4" parent="desk-redes/Perifericos" unique_id=234576032 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.024609, 0, -3.0633643)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk4" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk4" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk4/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7513,13 +7513,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard9" parent="desk-redes/Perifericos" unique_id=274245334 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7051287, 0, -8.138625)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard9" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard9" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.768376, 0.67162246, -3.161049)
 
 [node name="computerScreen9" parent="desk-redes/Perifericos" unique_id=1802796001 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7051287, 0, -8.138625)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen9" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen9" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.7262666, 0.66867805, -3.382309)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen9/computerScreen(Clone)" index="0" unique_id=1886705106]
@@ -7530,16 +7530,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse9" parent="desk-redes/Perifericos" unique_id=831705803 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7051287, 0, -8.138625)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse9" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse9" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -3.383118, 0.6946963, -3.2527676)
 
 [node name="chairDesk9" parent="desk-redes/Perifericos" unique_id=1389834044 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7051287, 0, -8.138625)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk9" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk9" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -3.4315927, 0.10376942, -3.0190983)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk9/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk9/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7551,13 +7551,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard10" parent="desk-redes/Perifericos" unique_id=1755164245 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7315702, 0, -8.138625)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard10" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard10" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.826026, 0.67162246, -0.52556324)
 
 [node name="computerScreen10" parent="desk-redes/Perifericos" unique_id=1940762245 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7315702, 0, -8.138625)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen10" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen10" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7839165, 0.66867805, -0.7468233)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen10/computerScreen(Clone)" index="0" unique_id=441779597]
@@ -7568,16 +7568,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse10" parent="desk-redes/Perifericos" unique_id=1295470501 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7315702, 0, -8.138625)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse10" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse10" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.4407673, 0.6946963, -0.6172819)
 
 [node name="chairDesk10" parent="desk-redes/Perifericos" unique_id=877816509 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7315702, 0, -8.138625)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk10" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk10" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.4458914, 0.10376942, -0.47803116)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk10/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk10/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7589,13 +7589,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard11" parent="desk-redes/Perifericos" unique_id=1866773642 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.759261, 0, -8.138625)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard11" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard11" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.973401, 0.67162246, -0.5224743)
 
 [node name="computerScreen11" parent="desk-redes/Perifericos" unique_id=722051859 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.759261, 0, -8.138625)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen11" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen11" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.9312916, 0.66867805, -0.74373436)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen11/computerScreen(Clone)" index="0" unique_id=507102970]
@@ -7606,16 +7606,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse11" parent="desk-redes/Perifericos" unique_id=15777762 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.759261, 0, -8.138625)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse11" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse11" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.588143, 0.6946963, -0.61419296)
 
 [node name="chairDesk11" parent="desk-redes/Perifericos" unique_id=442714348 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.759261, 0, -8.138625)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk11" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk11" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.614212, 0.10376942, -0.47803116)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk11/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk11/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7627,13 +7627,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard12" parent="desk-redes/Perifericos" unique_id=1335104246 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.729737, 0, -8.138625)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard12" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard12" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0883083, 0.67162246, -0.6199808)
 
 [node name="computerScreen12" parent="desk-redes/Perifericos" unique_id=1880725663 instance=ExtResource("9_73dkc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.729737, 0, -8.138625)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen12" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen12" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.046199, 0.66867805, -0.8412409)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen12/computerScreen(Clone)" index="0" unique_id=2016496552]
@@ -7644,19 +7644,19 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse12" parent="desk-redes/Perifericos" unique_id=1800238779 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.729737, 0, -8.138625)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse12" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse12" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.7030497, 0.6946963, -0.7116995)
 
 [node name="computerKeyboard13" parent="desk-redes/Perifericos" unique_id=634309145 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.378274, 0, -10.313927)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard13" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard13" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4145203, 0.67162246, 1.9491692)
 
 [node name="computerScreen13" parent="desk-redes/Perifericos" unique_id=740331462 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.378274, 0, -10.313927)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen13" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen13" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3724113, 0.66867805, 1.7279091)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen13/computerScreen(Clone)" index="0" unique_id=2117278354]
@@ -7667,16 +7667,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse13" parent="desk-redes/Perifericos" unique_id=550575665 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.378274, 0, -10.313927)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse13" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse13" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -6.0292625, 0.6946963, 1.8574486)
 
 [node name="chairDesk12" parent="desk-redes/Perifericos" unique_id=1067374463 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.378274, 0, -10.313927)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk12" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk12" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -6.0777373, 0.10376942, 2.0911179)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk12/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk12/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7688,13 +7688,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard14" parent="desk-redes/Perifericos" unique_id=798430619 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.3518326, 0, -10.313927)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard14" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard14" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4132586, 0.67162246, -0.61997986)
 
 [node name="computerScreen14" parent="desk-redes/Perifericos" unique_id=461615524 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.3518326, 0, -10.313927)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen14" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen14" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.371149, 0.66867805, -0.8412399)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen14/computerScreen(Clone)" index="0" unique_id=151621027]
@@ -7705,16 +7705,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse14" parent="desk-redes/Perifericos" unique_id=113196442 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.3518326, 0, -10.313927)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse14" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse14" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -5.0280004, 0.6946963, -0.7116995)
 
 [node name="chairDesk13" parent="desk-redes/Perifericos" unique_id=443728038 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.3518326, 0, -10.313927)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk13" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk13" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -5.030065, 0.10376942, -0.4780302)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk13/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk13/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7726,13 +7726,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard15" parent="desk-redes/Perifericos" unique_id=892407238 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.3241417, 0, -10.313927)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard15" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard15" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2088766, 0.67162246, -0.6199808)
 
 [node name="computerScreen15" parent="desk-redes/Perifericos" unique_id=491616935 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.3241417, 0, -10.313927)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen15" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen15" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.166767, 0.66867805, -0.8412409)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen15/computerScreen(Clone)" index="0" unique_id=1379031466]
@@ -7743,16 +7743,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse15" parent="desk-redes/Perifericos" unique_id=792770214 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.3241417, 0, -10.313927)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse15" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse15" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.8236184, 0.6946963, -0.7116995)
 
 [node name="chairDesk14" parent="desk-redes/Perifericos" unique_id=936205764 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.3241417, 0, -10.313927)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk14" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk14" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.872093, 0.10376942, -0.4780302)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk14/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk14/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7768,10 +7768,10 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="chairDesk15" parent="desk-redes/Perifericos" unique_id=273227167 instance=ExtResource("11_5nshd")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.3852003, 0, -10.313927)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk15" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk15" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk15/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk15/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7787,13 +7787,13 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 [node name="computerKeyboard16" parent="desk-redes/Perifericos" unique_id=2068672869 instance=ExtResource("8_2ocpx")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.3536651, 0, -10.313927)
 
-[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard16" index="0" unique_id=955136504]
+[node name="computerKeyboard(Clone)" parent="desk-redes/Perifericos/computerKeyboard16" index="0" unique_id=1576256303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.052223, 0.67162246, -0.619981)
 
 [node name="computerScreen16" parent="desk-redes/Perifericos" unique_id=1885745337 instance=ExtResource("9_73dkc")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.3536651, 0, -10.313927)
 
-[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen16" index="0" unique_id=59710764]
+[node name="computerScreen(Clone)" parent="desk-redes/Perifericos/computerScreen16" index="0" unique_id=326600510]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0101137, 0.66867805, -0.84124106)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-redes/Perifericos/computerScreen16/computerScreen(Clone)" index="0" unique_id=2044622468]
@@ -7804,16 +7804,16 @@ shape = SubResource("ConcavePolygonShape3D_vga4a")
 [node name="computerMouse16" parent="desk-redes/Perifericos" unique_id=568266325 instance=ExtResource("10_5n7j3")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.3536651, 0, -10.313927)
 
-[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse16" index="0" unique_id=1366767386]
+[node name="computerMouse(Clone)" parent="desk-redes/Perifericos/computerMouse16" index="0" unique_id=1638994547]
 transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, -4.666965, 0.6946963, -0.7116998)
 
 [node name="chairDesk16" parent="desk-redes/Perifericos" unique_id=1499125378 instance=ExtResource("11_5nshd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.729737, 0, -8.138625)
 
-[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk16" index="0" unique_id=1303669282]
+[node name="chairDesk(Clone)" parent="desk-redes/Perifericos/chairDesk16" index="0" unique_id=1087415989]
 transform = Transform3D(-1.1, 0, -1.509958e-07, 0, 1.205, 0, 1.6609539e-07, 0, -1, -4.71544, 0.10376942, -0.47803095)
 
-[node name="chair" parent="desk-redes/Perifericos/chairDesk16/chairDesk(Clone)" index="0" unique_id=1097997935]
+[node name="chair" parent="desk-redes/Perifericos/chairDesk16/chairDesk(Clone)" index="0" unique_id=646235500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16747522, 0.166924, -0.16)
 mesh = SubResource("ArrayMesh_xqxt5")
 
@@ -7824,7 +7824,7 @@ shape = SubResource("ConcavePolygonShape3D_ejlw6")
 
 [node name="desk-gestao" parent="." unique_id=715204760 instance=ExtResource("8_upq64")]
 
-[node name="deskCorner(Clone)" parent="desk-gestao" index="0" unique_id=1965651121]
+[node name="deskCorner(Clone)" parent="desk-gestao" index="0" unique_id=983227221]
 transform = Transform3D(-5.7917592e-08, 0, 1, 0, 1.475, 0, -1.325, 0, -4.371139e-08, 2.5788186, 0.10386658, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="desk-gestao/deskCorner(Clone)" index="1" unique_id=1165922921]
@@ -8071,7 +8071,7 @@ skin = SubResource("Skin_p2you")
 skeleton = NodePath("..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="personagens/Copy" unique_id=1566083872]
-transform = Transform3D(0.66, 0, -1.4210855e-14, 0, 0.66, 0, 1.4210855e-14, 0, 0.66, 0, 1, 0)
+transform = Transform3D(0.6600001, 0, -7.5139894e-13, 0, 0.6600001, 0, 7.5139894e-13, 0, 0.6600001, 0, 1.6311775, 0)
 shape = SubResource("CapsuleShape3D_kilgp")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="personagens/Copy" unique_id=525853363]
@@ -8080,10 +8080,10 @@ libraries/ = SubResource("AnimationLibrary_ixt2j")
 [node name="Suit_Male" parent="personagens" unique_id=1232324757 instance=ExtResource("13_2ocpx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.363826)
 
-[node name="CharacterArmature" parent="personagens/Suit_Male" index="0" unique_id=417073742]
+[node name="CharacterArmature" parent="personagens/Suit_Male" index="0" unique_id=1630804139]
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, -2.2118864, 0.12188959, 3.7202952)
 
-[node name="Skeleton3D" parent="personagens/Suit_Male/CharacterArmature" index="0" unique_id=1518396385]
+[node name="Skeleton3D" parent="personagens/Suit_Male/CharacterArmature" index="0" unique_id=19978366]
 bones/1/position = Vector3(0.2654247, 0.024662875, -0.04505539)
 bones/1/rotation = Quaternion(5.197531e-06, 0.70295197, 0.71123743, 5.3323706e-06)
 bones/2/position = Vector3(0.0021532448, 0.64654744, -0.3888195)

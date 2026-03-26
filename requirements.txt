@@ -17,3 +17,4 @@ ollama==0.6.1
 langchain-community
 setuptools==69.5.1
 langchain-ollama
+numpy
