@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://besw6t1de4s7l"]
+
+[ext_resource type="Script" uid="uid://dgjic1vd5nvex" path="res://Scripts/notificacao.gd" id="1_jf7h2"]
+[ext_resource type="AudioStream" uid="uid://sxrwfvsgvmsm" path="res://Audio/notification1.mp3" id="2_21ur0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve153"]
+bg_color = Color(0.11764706, 0.11764706, 0.14117648, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Notificacao" type="CanvasLayer" unique_id=2104843436]
+script = ExtResource("1_jf7h2")
+
+[node name="Panel" type="Panel" parent="." unique_id=44571749]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -322.0
+offset_top = 20.0
+offset_right = -22.0
+offset_bottom = 100.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ve153")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1153145651]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 2
+theme_override_font_sizes/font_size = 20
+text = "Nova Mensagem!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Som" type="AudioStreamPlayer" parent="." unique_id=91076762]
+stream = ExtResource("2_21ur0")

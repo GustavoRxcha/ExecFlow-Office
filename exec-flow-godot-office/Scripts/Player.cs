@@ -24,6 +24,7 @@ public partial class Player : CharacterBody3D
 
 	public override void _UnhandledInput(InputEvent @event)
 	{
+		// 1. Controle de Câmera
 		if (@event is InputEventMouseMotion mouseMotion && Input.MouseMode == Input.MouseModeEnum.Captured)
 		{
 			RotateY(-mouseMotion.Relative.X * _mouseSensitivity);
@@ -34,11 +35,38 @@ public partial class Player : CharacterBody3D
 			_camera.Rotation = cameraRot;
 		}
 
+		// 2. Liberar o mouse (tecla Esc / Cancel)
 		if (Input.IsActionJustPressed("ui_cancel"))
 		{
 			Input.MouseMode = Input.MouseModeEnum.Visible;
 		}
 
+		// 3. NOVO: Abrir/Fechar a Caixa de Entrada (tecla TAB)
+		// Usamos IsActionJustPressed para evitar que a tela fique piscando se segurar a tecla
+		if (Input.IsKeyPressed(Key.Tab))
+		{
+			// Pega a referência da tela de e-mail que está no Autoload
+			Node caixaEntrada = GetNode("/root/CaixaDeEntrada");
+			
+			// Descobre se ela está aberta ou fechada no momento
+			bool estaVisivel = (bool)caixaEntrada.Get("visible");
+			
+			// Inverte o estado (se está aberta, fecha; se está fechada, abre)
+			caixaEntrada.Set("visible", !estaVisivel);
+			
+			if (!estaVisivel) // Se acabou de abrir a tela
+			{
+				Input.MouseMode = Input.MouseModeEnum.Visible;
+				// Já aciona a aba do Copy automaticamente para carregar a lista
+				caixaEntrada.Call("abrir_setor", "Copy"); 
+			}
+			else // Se acabou de fechar a tela
+			{
+				Input.MouseMode = Input.MouseModeEnum.Captured;
+			}
+		}
+
+		// 4. Interagir com NPCs e abrir o Tablet de Chat
 		if (Input.IsActionJustPressed("interagir"))
 		{
 			if (_interactRay.IsColliding()) 
@@ -47,7 +75,7 @@ public partial class Player : CharacterBody3D
 				
 				if (target.IsInGroup("Interativo"))
 				{
-					// MUDANÇA: Passamos o próprio objeto 'target' e não só o nome
+					// Passamos o próprio objeto 'target' e não só o nome
 					_chatGestor.Call("configurar_chat", target);
 					
 					Input.MouseMode = Input.MouseModeEnum.Visible;

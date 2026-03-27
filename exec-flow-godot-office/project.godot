@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 CerebroMestre="*uid://m1twaylcj2tc"
+CaixaDeEntrada="*uid://nv2y78fu27nb"
+Notificacao="*uid://besw6t1de4s7l"
 
 [dotnet]
 

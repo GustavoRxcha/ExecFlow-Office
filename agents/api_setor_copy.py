@@ -39,11 +39,9 @@ llm_criativo = "ollama/llama3.1"
 # ---------------------------------------------------------
 def buscar_no_google(query):
     url = "https://google.serper.dev/search"
-    # Força a busca a focar no contexto atualizado e detalhes oficiais
-    query_expandida = f"{query} últimas notícias cenário oficial detalhes atuais"
-    
+    # Deixe a query pura. O Google decide o que é mais relevante.
     payload = json.dumps({
-        "q": query_expandida,
+        "q": query,
         "gl": "br",
         "hl": "pt-br",
         "num": 8 
@@ -73,18 +71,20 @@ def gerar_roteiro(pedido: Pedido):
     fatos_brutos = buscar_no_google(pedido.mensagem)
     
     if fatos_brutos:
-        print("[!] Analista a gerar Briefing de Contexto...")
         prompt_analise = f"""
-        Analise os dados brutos da internet e crie um 'Briefing de Inteligência' para um redator sénior.
-        Sua missão é dar PROFUNDIDADE e NARRATIVA ao tema.
+        Sua missão é criar um 'Briefing de Inteligência' cruzando o PEDIDO do usuário com os DADOS DA INTERNET.
         
-        REGRAS CRÍTICAS:
-        - Liste FATOS (nomes, datas, locais, números).
-        - Descreva o CENÁRIO ATUAL (o que está a acontecer agora e porquê).
-        - Identifique o SENTIMENTO (expectativa, preocupação, urgência, celebração).
-        - Mantenha nomes e termos originais em Português do Brasil.
+        DATA DE HOJE: {data_atual}
+        PEDIDO DO USUÁRIO: "{pedido.mensagem}"
         
-        DADOS BRUTOS:
+        REGRAS CRÍTICAS DE TEMPO E VERACIDADE:
+        1. INTENÇÃO DO USUÁRIO: Identifique se o chefe quer um post sobre algo RECENTE ("ontem", "hoje", "atual") ou algo HISTÓRICO ("em 1998", "Copa de 2002", "no passado").
+        2. CHECAGEM DE ALUCINAÇÃO: Compare a data dos DADOS BRUTOS com o que o chefe pediu.
+           - Se o chefe pediu algo de "ontem", mas os dados da web mostram jogos de anos atrás (ex: 2015, 2023), OS DADOS SÃO INVÁLIDOS. O briefing deve alertar: "O evento solicitado não ocorreu ontem. Não invente placares."
+           - Se o chefe pediu explicitamente sobre um evento do passado, use os dados antigos encontrados com precisão extrema.
+        3. NUNCA invente placares, nomes de jogadores ou datas que não estejam nos fatos confirmados.
+        
+        DADOS BRUTOS COLETADOS DA WEB:
         {fatos_brutos}
         """
         briefing = llm_analista.invoke(prompt_analise).content

@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://nv2y78fu27nb"]
+
+[ext_resource type="Script" uid="uid://00wfiuvmkh6c" path="res://Scripts/caixa_de_entrada.gd" id="1_5m7id"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5m7id"]
+bg_color = Color(0.11764706, 0.11764706, 0.14117648, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 10
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nnrad"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.16862746, 0.1764706, 0.25882354, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrvl2"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.16862746, 0.1764706, 0.25882354, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="CaixaDeEntrada" type="Control" unique_id=1892967330]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5m7id")
+
+[node name="Panel" type="Panel" parent="." unique_id=1963404615]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -225.0
+offset_right = 400.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5m7id")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=245793614]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer" unique_id=1625564467]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MenuLateral" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer" unique_id=1558069006]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/HBoxContainer/MenuLateral" unique_id=824672153]
+layout_mode = 2
+text = "Setores"
+
+[node name="BtnCopy" type="Button" parent="Panel/MarginContainer/HBoxContainer/MenuLateral" unique_id=807948434]
+layout_mode = 2
+text = "Copy"
+
+[node name="AreaConteudo" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer" unique_id=273961180]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BtnFechar" type="Button" parent="Panel/MarginContainer/HBoxContainer/AreaConteudo" unique_id=1411278806]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Fechar"
+
+[node name="ListaEmails" type="ItemList" parent="Panel/MarginContainer/HBoxContainer/AreaConteudo" unique_id=1592549792]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nnrad")
+
+[node name="TextoEmail" type="RichTextLabel" parent="Panel/MarginContainer/HBoxContainer/AreaConteudo" unique_id=1994013742]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_rrvl2")
+bbcode_enabled = true
+
+[node name="BotoesAcao" type="HBoxContainer" parent="Panel/MarginContainer/HBoxContainer/AreaConteudo" unique_id=982051411]
+layout_mode = 2
+
+[node name="BtnCopiar" type="Button" parent="Panel/MarginContainer/HBoxContainer/AreaConteudo/BotoesAcao" unique_id=1430702955]
+layout_mode = 2
+text = "Copiar Texto"
+
+[node name="BtnBaixar" type="Button" parent="Panel/MarginContainer/HBoxContainer/AreaConteudo/BotoesAcao" unique_id=1800382275]
+layout_mode = 2
+text = "Baixar .txt"
+
+[node name="FileDialog" type="FileDialog" parent="." unique_id=1696674709]
+access = 2
+filters = PackedStringArray("*.txt ; Arquivos de Texto")
