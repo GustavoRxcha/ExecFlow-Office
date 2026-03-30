@@ -18,3 +18,6 @@ langchain-community
 setuptools==69.5.1
 langchain-ollama
 numpy
+pytubefix
+faster-whisper
+playwright
