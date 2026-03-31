@@ -2,6 +2,9 @@
 .log
 
 agents/gerador_de_cortes/bin/
+agents/gerador_de_cortes/assets/
+agents/gerador_de_cortes/output/
+agents/gerador_de_cortes/temp/
 
 /venv
 __pycache__
