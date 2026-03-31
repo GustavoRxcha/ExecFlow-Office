@@ -1,30 +1,43 @@
 import os
+import math
 from faster_whisper import WhisperModel
+
+def formatar_tempo_srt(segundos: float) -> str:
+    """Converte segundos para o formato do SRT (HH:MM:SS,mmm)"""
+    horas = math.floor(segundos / 3600)
+    minutos = math.floor((segundos % 3600) / 60)
+    segs = math.floor(segundos % 60)
+    milisegundos = math.floor((segundos % 1) * 1000)
+    return f"{horas:02d}:{minutos:02d}:{segs:02d},{milisegundos:03d}"
 
 def transcrever_video(caminho_video: str, pasta_destino: str = "temp") -> str:
     print(f"\n[*] Iniciando transcrição do arquivo: {caminho_video}")
-    print("[*] Carregando o modelo Whisper da OpenAI (isso pode demorar um pouquinho na primeira vez que baixar)...")
+    print("[*] Carregando o modelo Whisper da OpenAI...")
     
-    # Usamos o modelo 'small' para ser rápido no Mac. 
-    # Para testes iniciais é ótimo. Depois podemos testar o 'medium' se precisar de mais precisão.
     modelo = WhisperModel("small", device="cpu", compute_type="int8")
-    
-    # O word_timestamps=True é o segredo para sabermos o tempo exato para as legendas
     segmentos, info = modelo.transcribe(caminho_video, beam_size=5, word_timestamps=True)
     
-    print(f"[*] Idioma detectado: {info.language} (Probabilidade: {info.language_probability})")
-    print("[*] Extraindo falas...")
+    nome_arquivo = os.path.basename(caminho_video).rsplit('.', 1)[0]
+    caminho_txt = os.path.join(pasta_destino, nome_arquivo + ".txt")
+    caminho_srt = os.path.join(pasta_destino, nome_arquivo + ".srt") # Novo arquivo de legenda
     
-    # Vamos salvar a transcrição em um arquivo de texto na pasta temp
-    nome_arquivo = os.path.basename(caminho_video).rsplit('.', 1)[0] + ".txt"
-    caminho_txt = os.path.join(pasta_destino, nome_arquivo)
+    print(f"[*] Idioma detectado: {info.language}")
+    print("[*] Extraindo falas e gerando legendas...")
     
-    with open(caminho_txt, "w", encoding="utf-8") as f:
-        for segmento in segmentos:
-            # Formata a linha mostrando o segundo inicial, final e o texto
-            linha = f"[{segmento.start:.2f}s -> {segmento.end:.2f}s] {segmento.text}"
-            print(linha) # Mostra no terminal para você acompanhar
-            f.write(linha + "\n")
+    # Abrimos os dois arquivos para salvar simultaneamente
+    with open(caminho_txt, "w", encoding="utf-8") as f_txt, open(caminho_srt, "w", encoding="utf-8") as f_srt:
+        for i, segmento in enumerate(segmentos, start=1):
+            # 1. Salva o TXT (usado pelo nosso fatiador matemático)
+            linha_txt = f"[{segmento.start:.2f}s -> {segmento.end:.2f}s] {segmento.text}"
+            print(linha_txt)
+            f_txt.write(linha_txt + "\n")
             
-    print(f"\n[+] Transcrição concluída e salva em: {caminho_txt}")
+            # 2. Salva o SRT (usado pelo FFmpeg para queimar a legenda na tela)
+            inicio_srt = formatar_tempo_srt(segmento.start)
+            fim_srt = formatar_tempo_srt(segmento.end)
+            f_srt.write(f"{i}\n")
+            f_srt.write(f"{inicio_srt} --> {fim_srt}\n")
+            f_srt.write(f"{segmento.text.strip()}\n\n")
+            
+    print(f"\n[+] Transcrição concluída! Textos e Legendas salvos em: {pasta_destino}/")
     return caminho_txt
