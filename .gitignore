@@ -1,5 +1,9 @@
 .tmp
 .log
 
+agents/gerador_de_cortes/bin/
+
 /venv
 __pycache__
+
+*.exe
